@@ -1,0 +1,12 @@
+Quy quy trình:
+	- Tạo mysql
+	- Tạo mô hình MVC
+		- Tạo connection( kết nối vs csdl)
+		- Tạo controller (hiển thị)
+		- Tạo index (up link lên url)
+		- Tạo HomeController ( dùng đê tạo lệnh xuất HomeView)
+		- Tạo HomeView (Xuất content)
+		- Tạo Layout.php (trang chủ)
+		- Tạo LoginView (Mở trang login)
+		- Tạo LoginModel(so sánh dữ liệu của ng dùng vs database)
+		- Tạo LoginController (Liên kết vs LoginModel, mở LoginView, tạo hàm đăng nhập đăng xuất)
