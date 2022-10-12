@@ -1,6 +1,6 @@
 <?php 
 	trait CategoriesModel{
-		//lay danh sach cac ban ghi, co phan trang
+		//lay danh sach cac ban ghi, co phan trang 
 		public function modelRead($recordPerPage){			
 			//lay bien page truyen tu url
 			$page = isset($_GET["page"])&&is_numeric($_GET["page"])&&$_GET["page"]>0 ? $_GET["page"]-1 : 0;

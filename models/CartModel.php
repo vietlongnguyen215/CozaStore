@@ -51,7 +51,7 @@
 		public function cartTotal(){
 		    $total = 0;
 		    foreach($_SESSION['cart'] as $product){
-		        $total += $product['price'] * $product['number'];
+		        $total += $product['price'] * $product['number']; 
 		    }
 		    return $total;
 		}
@@ -80,7 +80,7 @@
 		//=============
 		//checkout
 		public function cartCheckOut(){
-			//---
+			//--- 
 			$conn = Connection::getInstance();
 			//lay id vua moi insert
 			$customer_id = $_SESSION["customer_id"];

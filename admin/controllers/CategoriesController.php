@@ -1,7 +1,7 @@
 <?php 
 	//load file model
 	include "models/CategoriesModel.php";
-	class CategoriesController extends Controller{ 
+	class CategoriesController extends Controller{  
 		//ke thua class CategoriesModel
 		use CategoriesModel;
 		//liet ke so ban ghi

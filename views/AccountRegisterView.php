@@ -66,7 +66,7 @@
         background: linear-gradient(to right, #fc466b, #3f5efb);
     }
 </style>
-<div class="to"  style="margin: auto;">
+<div class="to"  style="margin: auto;"> 
     <div class="wrapper">
         <h2>Đăng ký tài khoản</h2>
         <?php if(isset($_GET["notify"])&&$_GET["notify"]=="exists"): ?>
@@ -98,7 +98,7 @@
                 <input type="password" name="password" class="input-control" required="">
             </div>
             <div class="form-group">
-                <input type="submit" id="submit" class="button" value="Đăng ký">
+                <input type="submit" id="submit" class="button" value="Đăng ký"> 
             </div>
         </form>
     </div>

@@ -24,7 +24,7 @@
 		//xoa san pham khoi gio hang
 		public function delete(){
 			$id = isset($_GET["id"]) ? $_GET["id"] : 0;
-			//goi ham cartDelete de them san pham vao gio hang
+			//goi ham cartDelete de them san pham vao gio hang 
 			$this->cartDelete($id);
 			//quay tro lai trang gio hang
 			header("location:index.php?controller=cart");
@@ -34,7 +34,7 @@
 			//goi ham cartDestroy de xoa gio hang
 			$this->cartDestroy($id);
 			//quay tro lai trang gio hang
-			header("location:index.php?controller=cart");
+			header("location:index.php?controller=cart"); 
 		}
 		//cap nhat nhieu san pham
 		public function update(){
@@ -49,10 +49,25 @@
 			header("location:index.php?controller=cart");
 		}
 		//thanh toan gio hang
+		// public function checkout(){
+		// 	//kiem tra neu user chua dang nhap thi di chuyen den trang dang nhap 
+		// 	if(isset($_SESSION["customer_email"]) == false)
+		// 		header("location:index.php?controller=account&action=login"); 
+		// 	else{
+		// 		//goi ham cartCheckOut de thanh toan gio hang
+		// 		$this->cartCheckOut();
+		// 		header("location:index.php?controller=cart");
+		// 	}
+		// }
+
+		public function checkinfor(){
+			$this->loadView("CheckoutView.php");
+		}
+
 		public function checkout(){
 			//kiem tra neu user chua dang nhap thi di chuyen den trang dang nhap
 			if(isset($_SESSION["customer_email"]) == false)
-				header("location:index.php?controller=account&action=login");
+				header("location:index.php?controller=cart&action=checkinfor"); 
 			else{
 				//goi ham cartCheckOut de thanh toan gio hang
 				$this->cartCheckOut();

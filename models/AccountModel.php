@@ -6,7 +6,7 @@
 			$address = $_POST["address"];
 			$phone = $_POST["phone"];
 			$password = $_POST["password"];
-			//kiem tra neu email khong ton tai trong table customers thi insert
+			//kiem tra neu email khong ton tai trong table customers thi insert 
 			$conn = Connection::getInstance();
 			$check = $conn->prepare("select id from customers_project where email=:var_email");
 			$check->execute(array("var_email"=>$email));
@@ -36,5 +36,7 @@
 			}else
 				header("location:index.php?controller=account&action=login");
 		}
+
+		
 	}
  ?>
